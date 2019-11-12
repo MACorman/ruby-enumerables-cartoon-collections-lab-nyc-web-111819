@@ -15,6 +15,10 @@ def find_the_cheese(array)
   #cheeses = %w[cheddar, gouda, camembert]
   #array.find {|any_cheese| any_cheese.include?(cheeses)}
   
-  
+    cheeses = %w[gouda cheddar camembert]
+
+  potentially_cheesy_items.find do |maybe_cheese|
+    cheeses.include?(maybe_cheese)
+  end
   
 end
